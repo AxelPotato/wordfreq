@@ -1,0 +1,9 @@
+services:
+  wordfreq-api:
+    build: .
+    container_name: wordfreq-service
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
