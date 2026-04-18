@@ -3,7 +3,7 @@ services:
     build: .
     container_name: wordfreq-service
     ports:
-      - "8000:8000"
+      - "8888:8888"
     restart: unless-stopped
     environment:
       - PYTHONUNBUFFERED=1
